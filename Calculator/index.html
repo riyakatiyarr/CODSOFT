@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" readonly value="0">
+            </div>
+            <div class="buttons">
+                <button class="btn btn-clear" onclick="calculator.handleClear()">C</button>
+                <button class="btn btn-operation" onclick="calculator.handleOperation('÷')">÷</button>
+                <button class="btn btn-operation" onclick="calculator.handleOperation('×')">×</button>
+                <button class="btn btn-operation" onclick="calculator.handleOperation('-')">-</button>
+                
+                <button class="btn btn-number" onclick="calculator.handleNumber('7')">7</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('8')">8</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('9')">9</button>
+                <button class="btn btn-operation" onclick="calculator.handleOperation('+')">+</button>
+                
+                <button class="btn btn-number" onclick="calculator.handleNumber('4')">4</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('5')">5</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('6')">6</button>
+                <button class="btn btn-equals" onclick="calculator.handleEquals()">=</button>
+                
+                <button class="btn btn-number" onclick="calculator.handleNumber('1')">1</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('2')">2</button>
+                <button class="btn btn-number" onclick="calculator.handleNumber('3')">3</button>
+                
+                <button class="btn btn-number btn-zero" onclick="calculator.handleNumber('0')">0</button>
+                <button class="btn btn-decimal" onclick="calculator.handleDecimal()">.</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2025 Riya Katiyar | All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
